@@ -53,6 +53,7 @@ class Post extends StatelessWidget {
   Widget _body() {
     return Container(
       child: FadeInImage(
+        placeholder: AssetImage('assets/gif/loading.gif'),
         image: NetworkImage(
           post.imageUrl,
         ),
