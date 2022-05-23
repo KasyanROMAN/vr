@@ -4,7 +4,7 @@ import 'package:vrg_rebbit/model/post_model.dart';
 
 class PostProvider {
   Future<List<PostModel>> fetchPosts(String subreddit) async {
-    final String url = 'https://www.reddit.com/$top.json';
+    final String url = 'https://www.reddit.com/$subreddit.json';
 
     final Uri ur = Uri.parse(url);
     final response = await http.get(ur);
